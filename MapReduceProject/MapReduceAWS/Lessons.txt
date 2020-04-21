@@ -1,0 +1,25 @@
+Matthew Cho
+NetID: mc1893
+
+From this project I was able to successfully run map reduce on the following reddit data. I was able to create 
+Map Reduce code that took txt files as input and compile a mapping of post id to value. Not only that, I was 
+able to run this program on both the ilab machine and AWS. I was able to see how AWS provided services for 
+hadoop, and was able to see how their hdfs interface was implemented from a users perspective. Through AWS I had
+to connect to the EC2 instance with the corresponding pek file using ssh and further send over my MapReduce code
+using scp in order to run Map Reduce in hadoop. 
+
+I did not have that many issues, though there was some verification issue on EC2 that halted some progress, but 
+it was nothing that couldn't be fixed by simply making a new EC2 instance; maybe I entered in some configuration 
+incorrectly. In the midst of trying to go with downloading hadoop locally, it showed the ease and value of services
+like AWS because they offer resources with a lot less overhead for a price. While trying to install hadoop locally,
+I found myself spending a lot of time trying to configure hadoop to work on Windows. So AWS was the solution to this 
+fustration.
+
+Note: MapReduce can been run on the iLab machines. Simply enter.....
+	>make startMapReduceSMALL
+		or
+	>make startMapReduceLARGE
+You will see the outputs in "./Reddit Data/small-output" or "./Reddit Data/large-output" 
+You will also have to do a... 
+	>make clean
+for every MapReduce that you run
